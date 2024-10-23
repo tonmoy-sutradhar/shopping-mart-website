@@ -6,7 +6,7 @@ const CartContainer = ({ handleIsActive, isActive }) => {
   // console.log(handleIsActive);
 
   return (
-    <div>
+    <div className="text-center">
       <h1 className="text-3xl font-bold">Cart-Container</h1>
 
       <div className="flex justify-around items-center text-xl font-bold mt-5">

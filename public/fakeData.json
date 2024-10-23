@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "Wireless Headphones",
-    "image": "https://i.ibb.co.com/D7Hm7Qq/pexels-tracy-le-blanc-67789-607812.jpg",
+    "image": " https://i.ibb.co.com/dKDpphp/pexels-life-of-pix-7974.jpg",
     "description": "High-quality wireless headphones with noise-cancellation and long battery life.",
     "price": 99.99,
     "category": "Electronics",
@@ -29,7 +29,7 @@
   {
     "id": 4,
     "name": "Ergonomic Office Chair",
-    "image": "https://example.com/images/chair.jpg",
+    "image": "https://i.ibb.co.com/dKDpphp/pexels-life-of-pix-7974.jpg ",
     "description": "Comfortable ergonomic office chair with adjustable height and lumbar support.",
     "price": 199.99,
     "category": "Furniture",
@@ -38,7 +38,7 @@
   {
     "id": 5,
     "name": "Portable Bluetooth Speaker",
-    "image": "https://i.ibb.co.com/dKDpphp/pexels-life-of-pix-7974.jpg",
+    "image": "https://i.ibb.co.com/D7Hm7Qq/pexels-tracy-le-blanc-67789-607812.jpg",
     "description": "Compact and powerful portable Bluetooth speaker with 10-hour battery life.",
     "price": 45.99,
     "category": "Electronics",

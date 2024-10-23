@@ -22,17 +22,20 @@ function App() {
       });
     }
   };
-  console.log(isActive);
   return (
     <>
       <Navbar></Navbar>
 
-      <div className="flex justify-around items-center mt-5">
-        <Allproducts></Allproducts>
-        <CartContainer
-          isActive={isActive}
-          handleIsActive={handleIsActive}
-        ></CartContainer>
+      <div className="flex justify-around mt-5 border border-b-teal-950">
+        <div className="w-1/2">
+          <Allproducts></Allproducts>
+        </div>
+        <div className="w-1/2">
+          <CartContainer
+            isActive={isActive}
+            handleIsActive={handleIsActive}
+          ></CartContainer>
+        </div>
       </div>
     </>
   );
