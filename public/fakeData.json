@@ -1,46 +1,46 @@
 [
   {
     "id": 1,
-    "name": "Wireless Headphones",
+    "name": "Asus VivoBook 15",
     "image": " https://i.ibb.co.com/dKDpphp/pexels-life-of-pix-7974.jpg",
-    "description": "High-quality wireless headphones with noise-cancellation and long battery life.",
-    "price": 99.99,
+    "description": "The Asus VivoBook 15 is a sleek and lightweight laptop offering powerful performance.",
+    "price": 589,
     "category": "Electronics",
     "isFeature": true
   },
   {
     "id": 2,
-    "name": "Smartphone Stand",
+    "name": "4K Monitor",
     "image": "https://i.ibb.co.com/gTQgqph/2.png",
-    "description": "Adjustable smartphone stand, perfect for watching videos and making video calls.",
-    "price": 15.49,
+    "description": "27-inch 4K Ultra HD monitor with stunning color accuracy and slim design. ",
+    "price": 500,
     "category": "Accessories",
     "isFeature": false
   },
   {
     "id": 3,
-    "name": "4K Monitor",
+    "name": "Smartphone Stand",
     "image": "https://i.ibb.co.com/D7Hm7Qq/pexels-tracy-le-blanc-67789-607812.jpg",
-    "description": "27-inch 4K Ultra HD monitor with stunning color accuracy and slim design.",
-    "price": 299.99,
+    "description": "Adjustable smartphone stand, perfect for watching videos and making video calls.",
+    "price": 619,
     "category": "Electronics",
     "isFeature": true
   },
   {
     "id": 4,
-    "name": "Ergonomic Office Chair",
+    "name": "MacBook Air Pro",
     "image": "https://i.ibb.co.com/dKDpphp/pexels-life-of-pix-7974.jpg ",
-    "description": "Comfortable ergonomic office chair with adjustable height and lumbar support.",
-    "price": 199.99,
+    "description": "The MacBook Air Pro is a sleek and lightweight laptop offering powerful performance.",
+    "price": 899,
     "category": "Furniture",
     "isFeature": false
   },
   {
     "id": 5,
-    "name": "Portable Bluetooth Speaker",
+    "name": "Portable Bluetooth Mobile",
     "image": "https://i.ibb.co.com/D7Hm7Qq/pexels-tracy-le-blanc-67789-607812.jpg",
-    "description": "Compact and powerful portable Bluetooth speaker with 10-hour battery life.",
-    "price": 45.99,
+    "description": "Compact and powerful portable Bluetooth Mobile with 10-hour battery life.",
+    "price": 450,
     "category": "Electronics",
     "isFeature": true
   }
