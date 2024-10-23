@@ -1,5 +1,5 @@
 // export default Cart;
-const Cart = ({ selectProducts }) => {
+const Cart = ({ selectProducts, handleDelete }) => {
   return (
     <div>
       {selectProducts.map((product) => (
@@ -13,7 +13,10 @@ const Cart = ({ selectProducts }) => {
             alt={product.name}
           />
           <h1 className="text-xl font-bold">{product.name}</h1>
-          <button className="border border-sky-400 p-2 rounded-lg bg-sky-400 text-black font-bold ">
+          <button
+            onClick={() => handleDelete(product.id)}
+            className="border border-sky-400 p-2 rounded-lg bg-sky-400 text-black font-bold "
+          >
             Delete
           </button>
         </div>

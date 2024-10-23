@@ -1,5 +1,5 @@
 import "./Navbar.css";
-const Navbar = ({ selectProducts }) => {
+const Navbar = ({ selectProducts, price }) => {
   return (
     <div className="flex justify-around items-center bg-sky-300 p-4">
       <div>
@@ -13,7 +13,7 @@ const Navbar = ({ selectProducts }) => {
         <p>HOME</p>
         <p>PRODUCT</p>
         <p>CART {selectProducts.length}</p>
-        <p>$ 500</p>
+        <p>$ {price}</p>
       </div>
     </div>
   );

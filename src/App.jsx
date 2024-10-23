@@ -32,15 +32,33 @@ function App() {
     if (isexist) {
       alert("Besi Chalaki Koiro na Monu");
     } else {
+      handleAddIncreasePrice(product.price);
       const newProducts = [...selectProducts, product];
       setSelectproducts(newProducts);
     }
   };
-  console.log(selectProducts);
+
+  const handleDelete = (id) => {
+    handleDecrisePrice(id);
+    const removeProduct = selectProducts.filter((p) => p.id != id);
+    setSelectproducts(removeProduct);
+  };
+
+  // for show price
+  const [price, setPrice] = useState(0);
+
+  const handleAddIncreasePrice = (tk) => {
+    setPrice(price + tk);
+  };
+
+  const handleDecrisePrice = (id) => {
+    const product = selectProducts.find((p) => p.id == id);
+    setPrice(price - product.price);
+  };
 
   return (
     <>
-      <Navbar selectProducts={selectProducts}></Navbar>
+      <Navbar price={price} selectProducts={selectProducts}></Navbar>
 
       <div className="flex justify-around mt-5 border border-b-teal-950">
         <div className="w-1/2">
@@ -50,6 +68,7 @@ function App() {
         </div>
         <div className="w-1/2">
           <CartContainer
+            handleDelete={handleDelete}
             selectProducts={selectProducts}
             isActive={isActive}
             handleIsActive={handleIsActive}
