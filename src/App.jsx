@@ -1,35 +1,41 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from "react";
+import "./App.css";
+import Allproducts from "./Components/Allproducts/Allproducts";
+import CartContainer from "./Components/CartContainer/CartContainer";
+import Navbar from "./Components/Header/Navbar";
 
 function App() {
-  const [count, setCount] = useState(0)
-
+  const [isActive, setIsActive] = useState({
+    cart: true,
+    status: "cart",
+  });
+  const handleIsActive = (status) => {
+    if (status == "cart") {
+      setIsActive({
+        cart: true,
+        status: "cart",
+      });
+    } else {
+      setIsActive({
+        cart: false,
+        status: "about",
+      });
+    }
+  };
+  console.log(isActive);
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <Navbar></Navbar>
+
+      <div className="flex justify-around items-center mt-5">
+        <Allproducts></Allproducts>
+        <CartContainer
+          isActive={isActive}
+          handleIsActive={handleIsActive}
+        ></CartContainer>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
