@@ -1,6 +1,6 @@
 import "./SingleProducts.css";
 
-const SingleProduct = ({ product }) => {
+const SingleProduct = ({ product, handleSelectedProduct }) => {
   const { name, image, description, price, category, isFeature } = product;
 
   return (
@@ -12,7 +12,10 @@ const SingleProduct = ({ product }) => {
         <p className="text-2xl">Price: ${price}</p>
         <p>Category: {category}</p>
         <p>{isFeature ? "Available" : "Not Available"}</p>
-        <button className=" mt-2 border-2  bg-sky-300 p-2 rounded-lg text-black font-bold">
+        <button
+          onClick={() => handleSelectedProduct(product)}
+          className=" mt-2 border-2  bg-sky-300 p-2 rounded-lg text-black font-bold"
+        >
           Add To Cart
         </button>
       </div>

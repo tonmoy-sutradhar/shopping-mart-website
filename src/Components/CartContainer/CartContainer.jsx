@@ -2,7 +2,7 @@ import About from "../About/About";
 import Cart from "../Cart/Cart";
 import "./CartContainer.css";
 
-const CartContainer = ({ handleIsActive, isActive }) => {
+const CartContainer = ({ handleIsActive, isActive, selectProducts }) => {
   // console.log(handleIsActive);
 
   return (
@@ -28,7 +28,11 @@ const CartContainer = ({ handleIsActive, isActive }) => {
         </div>
       </div>
 
-      {isActive.cart ? <Cart></Cart> : <About></About>}
+      {isActive.cart ? (
+        <Cart selectProducts={selectProducts}></Cart>
+      ) : (
+        <About></About>
+      )}
     </div>
   );
 };

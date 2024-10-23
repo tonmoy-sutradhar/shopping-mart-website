@@ -9,6 +9,7 @@ function App() {
     cart: true,
     status: "cart",
   });
+
   const handleIsActive = (status) => {
     if (status == "cart") {
       setIsActive({
@@ -22,16 +23,34 @@ function App() {
       });
     }
   };
+
+  const [selectProducts, setSelectproducts] = useState([]);
+
+  const handleSelectedProduct = (product) => {
+    const isexist = selectProducts.find((p) => p.id == product.id);
+
+    if (isexist) {
+      alert("Besi Chalaki Koiro na Monu");
+    } else {
+      const newProducts = [...selectProducts, product];
+      setSelectproducts(newProducts);
+    }
+  };
+  console.log(selectProducts);
+
   return (
     <>
-      <Navbar></Navbar>
+      <Navbar selectProducts={selectProducts}></Navbar>
 
       <div className="flex justify-around mt-5 border border-b-teal-950">
         <div className="w-1/2">
-          <Allproducts></Allproducts>
+          <Allproducts
+            handleSelectedProduct={handleSelectedProduct}
+          ></Allproducts>
         </div>
         <div className="w-1/2">
           <CartContainer
+            selectProducts={selectProducts}
             isActive={isActive}
             handleIsActive={handleIsActive}
           ></CartContainer>

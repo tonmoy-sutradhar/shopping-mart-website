@@ -1,5 +1,5 @@
 import "./Navbar.css";
-const Navbar = () => {
+const Navbar = ({ selectProducts }) => {
   return (
     <div className="flex justify-around items-center bg-sky-300 p-4">
       <div>
@@ -12,7 +12,7 @@ const Navbar = () => {
       <div className="flex justify-center items-center gap-7 text-2xl font-bold">
         <p>HOME</p>
         <p>PRODUCT</p>
-        <p>CART</p>
+        <p>CART {selectProducts.length}</p>
         <p>$ 500</p>
       </div>
     </div>
