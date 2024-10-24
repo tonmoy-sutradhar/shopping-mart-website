@@ -5,6 +5,7 @@ import CartContainer from "./Components/CartContainer/CartContainer";
 import Navbar from "./Components/Header/Navbar";
 
 function App() {
+  // For button Toggle
   const [isActive, setIsActive] = useState({
     cart: true,
     status: "cart",
@@ -23,7 +24,9 @@ function App() {
       });
     }
   };
+  // For button Toggle End
 
+  // For Select products
   const [selectProducts, setSelectproducts] = useState([]);
 
   const handleSelectedProduct = (product) => {
