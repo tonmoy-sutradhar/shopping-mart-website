@@ -1,5 +1,5 @@
 # Shopping Mart Website
-# Live link: -(https://tech-shopping-mart-website.netlify.app/)
+## Live link: -(https://tech-shopping-mart-website.netlify.app/)
 
 For this project use # JavaScript, # React, # ES6, # Tailwind CSS.
 Use API for this project and fetch all the data and show the browser.
