@@ -5,7 +5,7 @@ const Cart = ({ selectProducts, handleDelete }) => {
       {selectProducts.map((product) => (
         <div
           key={product.id}
-          className="flex justify-center items-center gap-12 border-2 border-blue-700 w-1/2 ml-56 mt-10 rounded-lg p-3 "
+          className="flex justify-center items-center gap-12 border-2 border-blue-700 max-w-fit ml-36 mt-10 rounded-lg p-3 "
         >
           <img
             className="w-36 rounded-lg"
